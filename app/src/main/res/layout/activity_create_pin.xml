@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backlogin"
+    tools:context=".CreatePin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_back"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="189dp"
+            android:layout_height="171dp"
+            android:layout_marginTop="60dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/houselogo" />
+
+        <LinearLayout
+            android:id="@+id/pinIndicatorLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2">
+
+            <!-- Индикаторы ввода пин-кода -->
+            <TextView
+                android:id="@+id/pinDot1"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pin_dot_empty" />
+
+            <TextView
+                android:id="@+id/pinDot2"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pin_dot_empty" />
+
+            <TextView
+                android:id="@+id/pinDot3"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pin_dot_empty" />
+
+            <TextView
+                android:id="@+id/pinDot4"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/pin_dot_empty" />
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/createPinGrid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/background_rglg"
+            android:columnCount="3"
+            android:rowCount="4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pinIndicatorLayout">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="1"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="2"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="3"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+
+                android:text="4"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="5"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="6"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="7"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button8"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="8"
+                android:textSize="24dp" />
+
+            <Button
+                android:id="@+id/button9"
+                android:layout_width="80dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/btnpin"
+                android:text="9"
+                android:textSize="24dp" />
+        </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
